@@ -415,23 +415,23 @@ DataTable.models.ext = {
 	 *        // Loop over each instance of the pager
 	 *        var an = oSettings.aanFeatures.p;
 	 *        for ( var i=0, iLen=an.length ; i<iLen ; i++ ) {
-	 *          var buttons = an[i].getElementsByTagName('span');
+	 *          var messages = an[i].getElementsByTagName('span');
 	 *          if ( oSettings._iDisplayStart === 0 ) {
-	 *            buttons[0].className = "paginate_disabled_previous";
-	 *            buttons[1].className = "paginate_disabled_previous";
+	 *            messages[0].className = "paginate_disabled_previous";
+	 *            messages[1].className = "paginate_disabled_previous";
 	 *          }
 	 *          else {
-	 *            buttons[0].className = "paginate_enabled_previous";
-	 *            buttons[1].className = "paginate_enabled_previous";
+	 *            messages[0].className = "paginate_enabled_previous";
+	 *            messages[1].className = "paginate_enabled_previous";
 	 *          }
 	 *          
 	 *          if ( oSettings.fnDisplayEnd() == oSettings.fnRecordsDisplay() ) {
-	 *            buttons[2].className = "paginate_disabled_next";
-	 *            buttons[3].className = "paginate_disabled_next";
+	 *            messages[2].className = "paginate_disabled_next";
+	 *            messages[3].className = "paginate_disabled_next";
 	 *          }
 	 *          else {
-	 *            buttons[2].className = "paginate_enabled_next";
-	 *            buttons[3].className = "paginate_enabled_next";
+	 *            messages[2].className = "paginate_enabled_next";
+	 *            messages[3].className = "paginate_enabled_next";
 	 *          }
 	 *        }
 	 *      }

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-  $(".submenu > a").click(function(e) {
+ /* $(".submenu > a").click(function(e) {
     e.preventDefault();
     var $li = $(this).parent("li");
     var $ul = $(this).next("ul");
@@ -16,7 +16,7 @@ $(document).ready(function(){
       $li.addClass("open");
     }
   });
-
+*/
     $('#confirm_password').on('keyup', function () {
         if ($('#password').val() == $('#confirm_password').val()) {
 
@@ -27,6 +27,9 @@ $(document).ready(function(){
             $('#message').html('Not Matching').css({'color': 'red', 'display': 'block'});
             $('#submit').attr('disabled', 'disabled');
         }
+    });
+    $('#add-student').click(()=>{
+       $('#myForm').submit();
     });
   
 });

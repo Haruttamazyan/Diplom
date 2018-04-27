@@ -717,9 +717,9 @@ function Header(calendar, options) {
 	
 	function renderSection(position) {
 		var e = $("<td class='fc-header-" + position + "'/>");
-		var buttonStr = options.header[position];
-		if (buttonStr) {
-			$.each(buttonStr.split(' '), function(i) {
+		var messagestr = options.header[position];
+		if (messagestr) {
+			$.each(messagestr.split(' '), function(i) {
 				if (i > 0) {
 					e.append("<span class='fc-header-space'/>");
 				}

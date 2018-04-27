@@ -136,7 +136,7 @@ CKEDITOR.replace( <em>textarea_id</em>, {
 			"Target" tab of the link dialog is automatically disabled as <code>target</code>
 			attribute isn't included in <abbr title="Advanced Content Filter">ACF</abbr> rules
 			for <code>&lt;a&gt;</code>. This behaviour applies to dialog fields, context
-			menus and toolbar buttons.
+			menus and toolbar messages.
 		</p>
 
 		<h2>Sample configurations</h2>
@@ -242,7 +242,7 @@ CKEDITOR.replace( 'editor2', {
 				(<code>&lt;u&gt;</code>, <code>&lt;sub&gt;</code>, <code>&lt;sup&gt;</code>
 				are disallowed by <code><a class="samples"
 				href="http://docs.ckeditor.com/#!/api/CKEDITOR.config-cfg-allowedContent">
-				config.allowedContent</a></code>) and many other buttons.
+				config.allowedContent</a></code>) and many other messages.
 			</p>
 		</div>
 		<textarea cols="80" id="editor2" name="editor2" rows="10">
@@ -326,21 +326,21 @@ CKEDITOR.replace( 'editor3', {
 		</label>
 		<div class="description">
 			<p>
-				This editor is using a custom set of plugins and buttons.
+				This editor is using a custom set of plugins and messages.
 			</p>
 <pre class="samples">
 CKEDITOR.replace( 'editor4', {
 	removePlugins: 'bidi,font,forms,flash,horizontalrule,iframe,justify,table,tabletools,smiley',
-	removeButtons: 'Anchor,Underline,Strike,Subscript,Superscript,Image',
+	removemessages: 'Anchor,Underline,Strike,Subscript,Superscript,Image',
 	format_tags: 'p;h1;h2;h3;pre;address'
 } );
 </pre>
 			<p>
-				As you can see, removing plugins and buttons implies filtering.
+				As you can see, removing plugins and messages implies filtering.
 				Several tags are not allowed in the editor because there's no
 				plugin/button that is responsible for creating and editing this
 				kind of content (for example: the image is missing because
-				of <code>removeButtons: 'Image'</code>). The conclusion is that
+				of <code>removemessages: 'Image'</code>). The conclusion is that
 				<abbr title="Advanced Content Filter">ACF</abbr> works "backwards"
 				as well: <strong>modifying <abbr title="User Interface">UI</abbr>
 				elements is changing allowed content rules</strong>.
@@ -353,7 +353,7 @@ CKEDITOR.replace( 'editor4', {
 
 			CKEDITOR.replace( 'editor4', {
 				removePlugins: 'bidi,div,font,forms,flash,horizontalrule,iframe,justify,table,tabletools,smiley',
-				removeButtons: 'Anchor,Underline,Strike,Subscript,Superscript,Image',
+				removemessages: 'Anchor,Underline,Strike,Subscript,Superscript,Image',
 				format_tags: 'p;h1;h2;h3;pre;address'
 			} );
 
@@ -372,7 +372,7 @@ CKEDITOR.replace( 'editor4', {
 				<abbr title="Advanced Content Filter">ACF</abbr> takes care of
 				what can be included in <code>&lt;h1&gt;</code>. Note that there
 				are no block styles in Styles combo. Also why lists, indentation,
-				blockquote, div, form and other buttons are missing.
+				blockquote, div, form and other messages are missing.
 			</p>
 			<p>
 				<abbr title="Advanced Content Filter">ACF</abbr> makes sure that

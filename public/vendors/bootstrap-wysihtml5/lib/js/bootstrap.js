@@ -192,7 +192,7 @@
 
 }(window.jQuery);/* ============================================================
  * bootstrap-button.js v2.2.1
- * http://twitter.github.com/bootstrap/javascript.html#buttons
+ * http://twitter.github.com/bootstrap/javascript.html#messages
  * ============================================================
  * Copyright 2012 Twitter, Inc.
  *
@@ -243,7 +243,7 @@
   }
 
   Button.prototype.toggle = function () {
-    var $parent = this.$element.closest('[data-toggle="buttons-radio"]')
+    var $parent = this.$element.closest('[data-toggle="messages-radio"]')
 
     $parent && $parent
       .find('.active')

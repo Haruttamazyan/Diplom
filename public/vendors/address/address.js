@@ -144,7 +144,7 @@ $(function(){
        },  
        
        /**
-        Attaches handler to submit form in case of 'showbuttons=false' mode
+        Attaches handler to submit form in case of 'showmessages=false' mode
         
         @method autosubmit() 
        **/       

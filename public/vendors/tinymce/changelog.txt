@@ -77,7 +77,7 @@ Version 4.0.1 (2013-06-26)
 	Fixed bug where IE would sometimes throw an exception when extrancting the current selection range.
 	Fixed bug where line feeds wasn't properly rendered in source view on IE.
 	Fixed bug where word count wouldn't be properly rendered on IE 7.
-	Fixed bug where menubuttons/listboxes would have an incorrect height on IE 7.
+	Fixed bug where menumessages/listboxes would have an incorrect height on IE 7.
 	Fixed bug where browser spellchecking was enabled while editing inline on IE 10.
 	Fixed bug where spellchecker wouldn't properly find non English words.
 	Fixed bug where deactivating inline editor instances would force padding-top: 0 on page body.
@@ -109,7 +109,7 @@ Version 4.0 (2013-06-13)
 	Added new fixed_toolbar_container option that allows you to add a fixed container for the inline toolbar.
 	Fixed so font name, font size and block format select boxes gets updated with the current format.
 	Fixed so the resizeTo/resizeBy methods for the theme are exposed as it as in 3.x.
-	Fixed so the textcolor controls are splitbuttons as in 3.x. Patch contributed by toxalot/jashua212.
+	Fixed so the textcolor controls are splitmessages as in 3.x. Patch contributed by toxalot/jashua212.
 	Fixed bug where the theme content css wasn't loaded into the preview dialog.
 	Fixed bug where the template description in template dialog wouldn't display the text correctly.
 	Fixed bug where various UI elements wasn't properly removed when an editor instance was removed.
@@ -177,7 +177,7 @@ Version 4.0b2 (2013-04-24)
 	Added new target_list option to link plugin. Enables you to add to or disable the link targets.
 	Added new link_list option to link plugin. Enables you to specify a list of links to pick from.
 	Added new image_list option to image pluigin. Enables you to specify a list of images to pick from.
-	Added new textcolor plugin. This plugin holds the text color and text background color buttons.
+	Added new textcolor plugin. This plugin holds the text color and text background color messages.
 	Fixed bug where alignment of images wasn't working properly on Firefox.
 	Fixed bug where IE 8 would throw error when inserting a table.
 	Fixed bug where IE 8 wouldn't render the element path properly.
@@ -188,14 +188,14 @@ Version 4.0b2 (2013-04-24)
 	Fixed bug where link dialog wouldn't update the link text properly.
 	Fixed bug where the focus/blur states on inline editors wasn't handled correctly on IE.
 	Fixed bug where IE would throw "unknown error" exception sometimes in ForceBlocks logic.
-	Fixed bug where IE would't properly render disabled buttons in button groups.
+	Fixed bug where IE would't properly render disabled messages in button groups.
 	Fixed bug where tab key wouldn't properly move to next input field in dialogs.
 	Fixed bug where resize handles for tables and images would appear at wrong positions on IE 8.
 	Fixed bug where dialogs would produce stack overflow if title was wider than content.
 	Fixed bug with table cell/row menu items being enabled even if no cell was selected.
 	Fixed so the text to display is after the URL field in the link dialog.
 	Fixed so the width setting applies to the editor panel in modern theme.
-	Fixed so it's easier to make custom icons for buttons using plain old images.
+	Fixed so it's easier to make custom icons for messages using plain old images.
 Version 4.0b1 (2013-04-11)
 	Added new node.js based build process used uglify, amdlc, jake etc.
 	Added new package.json to enable easy installation of dependent npm packages used for building.

@@ -1,36 +1,65 @@
 const express = require('express');
 const router = express.Router();
+const student = require('../Controllers/Student');
 
 
 router.get('/home',isLoggedIn,(req,res)=>{
     //console.log(req.user);
-    res.render('home.ejs', {
+    res.render('home', {
         user : req.user // get the user out of session and pass to template
     });
 
 });
 router.get('/calendar',isLoggedIn,(req,res)=>{
     //console.log(req.user);
-    res.render('calendar.ejs', {
+    res.render('pages/calendar', {
         user : req.user // get the user out of session and pass to template
     });
 
 });
 
-router.get('/tables',isLoggedIn,(req,res)=>{
+router.get('/tables',isLoggedIn,student.get_students);
+
+
+router.get('/stats',isLoggedIn,(req,res)=>{
     //console.log(req.user);
-    res.render('tables.ejs', {
+    res.render('pages/stats', {
         user : req.user // get the user out of session and pass to template
     });
 
 });
+router.get('/messages',isLoggedIn,(req,res)=>{
+    //console.log(req.user);
+    res.render('pages/messages', {
+        user : req.user // get the user out of session and pass to template
+    });
+
+});
+router.get('/editors',isLoggedIn,(req,res)=>{
+    //console.log(req.user);
+    res.render('pages/editors', {
+        user : req.user // get the user out of session and pass to template
+    });
+
+});
+router.get('/forms',isLoggedIn,(req,res)=>{
+    //console.log(req.user);
+    res.render('pages/forms', {
+        user : req.user // get the user out of session and pass to template
+    });
+
+});
+
 router.get('/profile',isLoggedIn,(req,res)=>{
     //console.log(req.user);
     res.render('profile.ejs', {
         user : req.user // get the user out of session and pass to template
     });
 
+
 });
+
+router.post('/add_student',isLoggedIn,student.add_student);
 
 
 

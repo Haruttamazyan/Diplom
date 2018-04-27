@@ -112,7 +112,7 @@ var AutoValidator = {
 		this.mark(n.form, n);
 	},
 	
-	getErrorMessages : function(f) {
+	getErrormessages : function(f) {
 		var nl, i, s = this.settings, field, msg, values, messages = [], ed = tinyMCEPopup.editor;
 		nl = this.tags(f, "label");
 		for (i=0; i<nl.length; i++) {

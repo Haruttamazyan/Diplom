@@ -164,7 +164,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
 
 /* ========================================================================
  * Bootstrap: button.js v3.0.3
- * http://getbootstrap.com/javascript/#buttons
+ * http://getbootstrap.com/javascript/#messages
  * ========================================================================
  * Copyright 2013 Twitter, Inc.
  *
@@ -217,7 +217,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
   }
 
   Button.prototype.toggle = function () {
-    var $parent = this.$element.closest('[data-toggle="buttons"]')
+    var $parent = this.$element.closest('[data-toggle="messages"]')
     var changed = true
 
     if ($parent.length) {

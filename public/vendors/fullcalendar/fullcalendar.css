@@ -73,7 +73,7 @@ html .fc,
 	vertical-align: top;
 	}
 	
-/* buttons edges butting together */
+/* messages edges butting together */
 
 .fc-header .fc-button {
 	margin-right: -1px;
@@ -139,7 +139,7 @@ html .fc,
 	
 
 
-/* Buttons
+/* messages
 ------------------------------------------------------------------------*/
 
 .fc-button {
@@ -341,7 +341,7 @@ a.fc-event {
 	
 	
 	
-/* Fake Rounded Corners (for buttons and events)
+/* Fake Rounded Corners (for messages and events)
 ------------------------------------------------------------*/
 	
 .fc-corner-left {

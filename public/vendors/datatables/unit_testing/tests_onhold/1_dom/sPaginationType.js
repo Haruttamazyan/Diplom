@@ -51,7 +51,7 @@ $(document).ready( function () {
 	/* Don't test paging - that's done by the zero config test script. */
 	
 	
-	/* Two buttons paging */
+	/* Two messages paging */
 	oTest.fnTest( 
 		"Can enabled full numbers paging",
 		function () {

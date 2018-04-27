@@ -7,9 +7,9 @@
     <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
 
     <!-- Bootstrap -->
-    <link href="../public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- styles -->
-    <link href="../public/css/styles.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,7 +25,7 @@
 	           <div class="col-md-5">
 	              <!-- Logo -->
 	              <div class="logo">
-	                 <h1><a href="home.ejs">Bootstrap Admin Theme</a></h1>
+	                 <h1><a href="/">Bootstrap Admin Theme</a></h1>
 	              </div>
 	           </div>
 	           <div class="col-md-5">
@@ -47,8 +47,8 @@
 	                      <li class="dropdown">
 	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
 	                        <ul class="dropdown-menu animated fadeInUp">
-	                          <li><a href="profile.html">Profile</a></li>
-	                          <li><a href="auth/login.ejs">Logout</a></li>
+	                          <li><a href="/profile">Profile</a></li>
+	                          <li><a href="/login">Logout</a></li>
 	                        </ul>
 	                      </li>
 	                    </ul>
@@ -65,13 +65,13 @@
 		  	<div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li><a href="home.ejs"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
-                    <li><a href="calendar.ejs"><i class="glyphicon glyphicon-calendar"></i> Calendar</a></li>
-                    <li><a href="stats.ejs"><i class="glyphicon glyphicon-stats"></i> Statistics (Charts)</a></li>
-                    <li class="current"><a href="tables.ejs"><i class="glyphicon glyphicon-list"></i> Tables</a></li>
-                    <li><a href="buttons.ejs"><i class="glyphicon glyphicon-record"></i> Buttons</a></li>
-                    <li><a href="editors.ejs"><i class="glyphicon glyphicon-pencil"></i> Editors</a></li>
-                    <li><a href="forms.ejs"><i class="glyphicon glyphicon-tasks"></i> Forms</a></li>
+                    <li><a href="/"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
+                    <li><a href="/calendar"><i class="glyphicon glyphicon-calendar"></i> Calendar</a></li>
+                    <li><a href="/stats"><i class="glyphicon glyphicon-user"></i> profile</a></li>
+                    <li class="current"><a href="/tables"><i class="glyphicon glyphicon-list"></i> Tables</a></li>
+                    <li><a href="/messages"><i class="glyphicon glyphicon-envelope"></i> messages</a></li>
+                    <li><a href="/editors"><i class="glyphicon glyphicon-pencil"></i> Editors</a></li>
+                    <li><a href="/forms"><i class="glyphicon glyphicon-tasks"></i> Forms</a></li>
                     <li class="submenu">
                          <a href="#">
                             <i class="glyphicon glyphicon-list"></i> Pages
@@ -79,8 +79,8 @@
                          </a>
                          <!-- Sub menu -->
                          <ul>
-                            <li><a href="auth/login.ejs">Login</a></li>
-                            <li><a href="auth/signup.ejs">Signup</a></li>
+                            <li><a href="/login">Login</a></li>
+                            <li><a href="../auth/signup.ejs">Signup</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -88,7 +88,7 @@
 		  </div>
 		  <div class="col-md-10">
 
-		  	<div class="row">
+		  	<!--<div class="row">
   				<div class="col-md-6">
   					<div class="content-box-large">
 		  				<div class="panel-heading">
@@ -178,7 +178,7 @@
 		  			</div>
   				</div>
   			</div>
-
+--><!--
   			<div class="row">
   				<div class="col-md-6">
   					<div class="content-box-large">
@@ -269,8 +269,8 @@
 		  			</div>
   				</div>
   			</div>
-
-  			<div class="row">
+-->
+  			<!--<div class="row">
   				<div class="col-md-6">
   					<div class="content-box-large">
 		  				<div class="panel-heading">
@@ -360,10 +360,11 @@
 		  			</div>
   				</div>
   			</div>
-
+-->
   			<div class="content-box-large">
   				<div class="panel-heading">
 					<div class="panel-title">Responsive Tables</div>
+					<button class="btn btn-success" data-toggle="modal" data-target="#myModal" style="float: right"><span class="glyphicon glyphicon-plus"></span> Add </button>
 				</div>
   				<div class="panel-body">
   					<div class="table-responsive">
@@ -373,35 +374,89 @@
 			                  <th>#</th>
 			                  <th>First Name</th>
 			                  <th>Last Name</th>
-			                  <th>Username</th>
+			                  <th>Email</th>
+			                  <th>Group</th>
+			                  <th>Phone</th>
+			                  <th>password</th>
+			                  <th> </th>
+
 			                </tr>
 			              </thead>
 			              <tbody>
+						  <% let i=0; students.forEach(function(student) { %>
 			                <tr>
-			                  <td>1</td>
-			                  <td>Mark</td>
-			                  <td>Otto</td>
-			                  <td>@mdo</td>
+			                  <td><%= i %></td>
+			                  <td><%= student.name %></td>
+			                  <td><%= student.lastname %></td>
+			                  <td><%= student.email %></td>
+			                  <td><%= student.your_group %></td>
+			                  <td><%= student.phone %></td>
+			                  <td><%= student.password %></td>
+			                  <td>
+								  <div class="btn-group" role="group" aria-label="Basic example"style="float: right">
+									  <button class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Edit</button>
+									  <a href="#" class="btn btn-info"><span class="glyphicon glyphicon-envelope"></span> Message </a>
+									  <button  class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Remove </button>
+								  </div>
+							  </td>
 			                </tr>
-			                <tr>
-			                  <td>2</td>
-			                  <td>Jacob</td>
-			                  <td>Thornton</td>
-			                  <td>@fat</td>
-			                </tr>
-			                <tr>
-			                  <td>3</td>
-			                  <td>Larry</td>
-			                  <td>the Bird</td>
-			                  <td>@twitter</td>
-			                </tr>
+						  <% i++; }); %>
 			              </tbody>
 			            </table>
   					</div>
   				</div>
   			</div>
+			  <!-- Modal -->
+			  <div class="modal fade" id="myModal" role="dialog">
+				  <div class="modal-dialog">
 
-  			<div class="content-box-large">
+					  <!-- Modal content-->
+					  <div class="modal-content">
+						  <div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal">&times;</button>
+							  <h4 class="modal-title">Add Student</h4>
+						  </div>
+						  <div class="modal-body">
+							  <form id="myForm" action="/add_student" method="post">
+								  <input type="hidden" name="user_id" value="<%= user.id %>">
+								  <div class="form-group">
+									  <label for="name">Name:</label>
+									  <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+								  </div>
+								  <div class="form-group">
+									  <label for="name">lastname:</label>
+									  <input type="text" class="form-control" id="lastname" placeholder="Enter Latname" name="lastname">
+								  </div>
+								  <div class="form-group">
+									  <label for="email">Email:</label>
+									  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+								  </div>
+								  <div class="form-group">
+									  <label for="group">Group:</label>
+									  <input type="text" class="form-control" id="group" placeholder="Enter Group" name="group">
+								  </div>
+								  <div class="form-group">
+									  <label for="phone">Phone:</label>
+									  <input type="tel" class="form-control" id="phone" placeholder="Enter Phone" name="phone">
+								  </div>
+								  <div class="form-group">
+									  <label for="pwd">Password:</label>
+									  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+								  </div>
+
+
+							  </form>
+						  </div>
+						  <div class="modal-footer">
+							  <button type="button" id="add-student" class="btn btn-success" data-dismiss="modal">Add</button>
+							  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						  </div>
+					  </div>
+
+				  </div>
+			  </div>
+
+  			<!--<div class="content-box-large">
   				<div class="panel-heading">
 					<div class="panel-title">Bootstrap dataTables</div>
 				</div>
@@ -823,7 +878,7 @@
 						</tbody>
 					</table>
   				</div>
-  			</div>
+  			</div>-->
 
 
 
@@ -841,20 +896,20 @@
          </div>
       </footer>
 
-      <link href="../vendors/datatables/dataTables.bootstrap.css" rel="stylesheet" media="screen">
+      <link href="/vendors/datatables/dataTables.bootstrap.css" rel="stylesheet" media="screen">
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- jQuery UI -->
     <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../public/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="../vendors/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="/vendors/datatables/js/jquery.dataTables.min.js"></script>
 
-    <script src="../vendors/datatables/dataTables.bootstrap.js"></script>
+    <script src="/vendors/datatables/dataTables.bootstrap.js"></script>
 
-    <script src="../public/js/main.js"></script>
-    <script src="../public/js/tables.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/tables.js"></script>
   </body>
 </html>

@@ -21,13 +21,13 @@ $.extend( $.fn.dataTableExt.oStdClasses, {
 // rather than  custom plug-in
 if ( $.fn.dataTable.Api ) {
 	$.fn.dataTable.defaults.renderer = 'bootstrap';
-	$.fn.dataTable.ext.renderer.pageButton.bootstrap = function ( settings, host, idx, buttons, page, pages ) {
+	$.fn.dataTable.ext.renderer.pageButton.bootstrap = function ( settings, host, idx, messages, page, pages ) {
 		var api = new $.fn.dataTable.Api( settings );
 		var classes = settings.oClasses;
 		var lang = settings.oLanguage.oPaginate;
 		var btnDisplay, btnClass;
 
-		var attach = function( container, buttons ) {
+		var attach = function( container, messages ) {
 			var i, ien, node, button;
 			var clickHandler = function ( e ) {
 				e.preventDefault();
@@ -36,8 +36,8 @@ if ( $.fn.dataTable.Api ) {
 				}
 			};
 
-			for ( i=0, ien=buttons.length ; i<ien ; i++ ) {
-				button = buttons[i];
+			for ( i=0, ien=messages.length ; i<ien ; i++ ) {
+				button = messages[i];
 
 				if ( $.isArray( button ) ) {
 					attach( container, button );
@@ -109,7 +109,7 @@ if ( $.fn.dataTable.Api ) {
 
 		attach(
 			$(host).empty().html('<ul class="pagination"/>').children('ul'),
-			buttons
+			messages
 		);
 	}
 }
@@ -220,13 +220,13 @@ if ( $.fn.DataTable.TableTools ) {
 	// Set the classes that TableTools uses to something suitable for Bootstrap
 	$.extend( true, $.fn.DataTable.TableTools.classes, {
 		"container": "DTTT btn-group",
-		"buttons": {
+		"messages": {
 			"normal": "btn btn-default",
 			"disabled": "disabled"
 		},
 		"collection": {
 			"container": "DTTT_dropdown dropdown-menu",
-			"buttons": {
+			"messages": {
 				"normal": "",
 				"disabled": "disabled"
 			}

@@ -7,16 +7,16 @@
     <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
 
     <!-- Bootstrap -->
-    <link href="../public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- styles -->
-    <link href="../public/css/styles.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="../vendors/form-helpers/css/bootstrap-formhelpers.min.css" rel="stylesheet">
-    <link href="../vendors/select/bootstrap-select.min.css" rel="stylesheet">
-    <link href="../vendors/tags/css/bootstrap-tags.css" rel="stylesheet">
+    <link href="/vendors/form-helpers/css/bootstrap-formhelpers.min.css" rel="stylesheet">
+    <link href="/vendors/select/bootstrap-select.min.css" rel="stylesheet">
+    <link href="/vendors/tags/css/bootstrap-tags.css" rel="stylesheet">
 
-    <link href="../public/css/forms.css" rel="stylesheet">
+    <link href="/css/forms.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,7 +32,7 @@
 	           <div class="col-md-5">
 	              <!-- Logo -->
 	              <div class="logo">
-	                 <h1><a href="home.ejs">Bootstrap Admin Theme</a></h1>
+	                 <h1><a href="/">Bootstrap Admin Theme</a></h1>
 	              </div>
 	           </div>
 	           <div class="col-md-5">
@@ -54,8 +54,8 @@
 	                      <li class="dropdown">
 	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
 	                        <ul class="dropdown-menu animated fadeInUp">
-	                          <li><a href="profile.html">Profile</a></li>
-	                          <li><a href="auth/login.ejs">Logout</a></li>
+	                          <li><a href="/profile">Profile</a></li>
+	                          <li><a href="/login">Logout</a></li>
 	                        </ul>
 	                      </li>
 	                    </ul>
@@ -72,13 +72,13 @@
 		  	<div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li><a href="home.ejs"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
-                    <li><a href="calendar.ejs"><i class="glyphicon glyphicon-calendar"></i> Calendar</a></li>
-                    <li><a href="stats.ejs"><i class="glyphicon glyphicon-stats"></i> Statistics (Charts)</a></li>
-                    <li><a href="tables.ejs"><i class="glyphicon glyphicon-list"></i> Tables</a></li>
-                    <li><a href="buttons.ejs"><i class="glyphicon glyphicon-record"></i> Buttons</a></li>
-                    <li><a href="editors.ejs"><i class="glyphicon glyphicon-pencil"></i> Editors</a></li>
-                    <li class="current"><a href="forms.ejs"><i class="glyphicon glyphicon-tasks"></i> Forms</a></li>
+                    <li><a href="/"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
+                    <li><a href="/calendar"><i class="glyphicon glyphicon-calendar"></i> Calendar</a></li>
+                    <li><a href="/stats"><i class="glyphicon glyphicon-user"></i> profile</a></li>
+                    <li><a href="/tables"><i class="glyphicon glyphicon-list"></i> Tables</a></li>
+                    <li><a href="/messages"><i class="glyphicon glyphicon-envelope"></i> messages</a></li>
+                    <li><a href="/editors"><i class="glyphicon glyphicon-pencil"></i> Editors</a></li>
+                    <li class="current"><a href="/forms"><i class="glyphicon glyphicon-tasks"></i> Forms</a></li>
                     <li class="submenu">
                          <a href="#">
                             <i class="glyphicon glyphicon-list"></i> Pages
@@ -86,8 +86,8 @@
                          </a>
                          <!-- Sub menu -->
                          <ul>
-                            <li><a href="auth/login.ejs">Login</a></li>
-                            <li><a href="auth/signup.ejs">Signup</a></li>
+                            <li><a href="/login">Login</a></li>
+                            <li><a href="../auth/signup.ejs">Signup</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -1064,7 +1064,7 @@
 										</div>
 			
 										<div class="form-group">
-											<label class="control-label col-md-2" for="appendbutton">With buttons</label>
+											<label class="control-label col-md-2" for="appendbutton">With messages</label>
 											<div class="col-md-10">
 												<div class="row">
 													<div class="col-sm-12">
@@ -1409,7 +1409,7 @@
 							                        <td><a href="#" id="sex" data-type="select" data-pk="1" data-value="" data-title="Select sex" class="editable editable-click" style="color: gray;">not selected</a></td>
 							                    </tr>
 							                    <tr>         
-							                        <td>Select, remote array, no buttons</td>
+							                        <td>Select, remote array, no messages</td>
 							                        <td><a href="#" id="group" data-type="select" data-pk="1" data-value="5" data-title="Select group" class="editable editable-click">Admin</a></td>
 							                    </tr> 
 							                    <tr>         
@@ -1429,7 +1429,7 @@
 							                                         
 							                                        
 							                    <tr>         
-							                        <td>Textarea, buttons below. Submit by <i>ctrl+enter</i></td>
+							                        <td>Textarea, messages below. Submit by <i>ctrl+enter</i></td>
 							                        <td><a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments" class="editable editable-pre-wrapped editable-click">awesome
 							user!</a></td>
 							                    </tr>             
@@ -1609,29 +1609,29 @@
     <!-- jQuery UI -->
     <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../public/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="../vendors/form-helpers/js/bootstrap-formhelpers.min.js"></script>
+    <script src="/vendors/form-helpers/js/bootstrap-formhelpers.min.js"></script>
 
-    <script src="../vendors/select/bootstrap-select.min.js"></script>
+    <script src="/vendors/select/bootstrap-select.min.js"></script>
 
-    <script src="../vendors/tags/js/bootstrap-tags.min.js"></script>
+    <script src="/vendors/tags/js/bootstrap-tags.min.js"></script>
 
-    <script src="../vendors/mask/jquery.maskedinput.min.js"></script>
+    <script src="/vendors/mask/jquery.maskedinput.min.js"></script>
 
-    <script src="../vendors/moment/moment.min.js"></script>
+    <script src="/vendors/moment/moment.min.js"></script>
 
-    <script src="../vendors/wizard/jquery.bootstrap.wizard.min.js"></script>
+    <script src="/vendors/wizard/jquery.bootstrap.wizard.min.js"></script>
 
      <!-- bootstrap-datetimepicker -->
-     <link href="../vendors/bootstrap-datetimepicker/datetimepicker.css" rel="stylesheet">
-     <script src="../vendors/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+     <link href="/vendors/bootstrap-datetimepicker/datetimepicker.css" rel="stylesheet">
+     <script src="/vendors/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
 
 
     <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
 
-    <script src="../public/js/main.js"></script>
-    <script src="../public/js/forms.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/forms.js"></script>
   </body>
 </html>

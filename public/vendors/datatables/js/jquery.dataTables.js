@@ -7343,23 +7343,23 @@
 		 *        // Loop over each instance of the pager
 		 *        var an = oSettings.aanFeatures.p;
 		 *        for ( var i=0, iLen=an.length ; i<iLen ; i++ ) {
-		 *          var buttons = an[i].getElementsByTagName('span');
+		 *          var messages = an[i].getElementsByTagName('span');
 		 *          if ( oSettings._iDisplayStart === 0 ) {
-		 *            buttons[0].className = "paginate_disabled_previous";
-		 *            buttons[1].className = "paginate_disabled_previous";
+		 *            messages[0].className = "paginate_disabled_previous";
+		 *            messages[1].className = "paginate_disabled_previous";
 		 *          }
 		 *          else {
-		 *            buttons[0].className = "paginate_enabled_previous";
-		 *            buttons[1].className = "paginate_enabled_previous";
+		 *            messages[0].className = "paginate_enabled_previous";
+		 *            messages[1].className = "paginate_enabled_previous";
 		 *          }
 		 *          
 		 *          if ( oSettings.fnDisplayEnd() == oSettings.fnRecordsDisplay() ) {
-		 *            buttons[2].className = "paginate_disabled_next";
-		 *            buttons[3].className = "paginate_disabled_next";
+		 *            messages[2].className = "paginate_disabled_next";
+		 *            messages[3].className = "paginate_disabled_next";
 		 *          }
 		 *          else {
-		 *            buttons[2].className = "paginate_enabled_next";
-		 *            buttons[3].className = "paginate_enabled_next";
+		 *            messages[2].className = "paginate_enabled_next";
+		 *            messages[3].className = "paginate_enabled_next";
 		 *          }
 		 *        }
 		 *      }
@@ -11429,7 +11429,7 @@
 	$.extend( DataTable.ext.oStdClasses, {
 		"sTable": "dataTable",
 	
-		/* Two buttons buttons */
+		/* Two messages messages */
 		"sPagePrevEnabled": "paginate_enabled_previous",
 		"sPagePrevDisabled": "paginate_disabled_previous",
 		"sPageNextEnabled": "paginate_enabled_next",
@@ -11437,10 +11437,10 @@
 		"sPageJUINext": "",
 		"sPageJUIPrev": "",
 		
-		/* Full numbers paging buttons */
+		/* Full numbers paging messages */
 		"sPageButton": "paginate_button",
 		"sPageButtonActive": "paginate_active",
-		"sPageButtonStaticDisabled": "paginate_button paginate_button_disabled",
+		"sPagemessagestaticDisabled": "paginate_button paginate_button_disabled",
 		"sPageFirst": "first",
 		"sPagePrevious": "previous",
 		"sPageNext": "next",
@@ -11493,7 +11493,7 @@
 	
 	
 	$.extend( DataTable.ext.oJUIClasses, DataTable.ext.oStdClasses, {
-		/* Two buttons buttons */
+		/* Two messages messages */
 		"sPagePrevEnabled": "fg-button ui-button ui-state-default ui-corner-left",
 		"sPagePrevDisabled": "fg-button ui-button ui-state-default ui-corner-left ui-state-disabled",
 		"sPageNextEnabled": "fg-button ui-button ui-state-default ui-corner-right",
@@ -11501,16 +11501,16 @@
 		"sPageJUINext": "ui-icon ui-icon-circle-arrow-e",
 		"sPageJUIPrev": "ui-icon ui-icon-circle-arrow-w",
 		
-		/* Full numbers paging buttons */
+		/* Full numbers paging messages */
 		"sPageButton": "fg-button ui-button ui-state-default",
 		"sPageButtonActive": "fg-button ui-button ui-state-default ui-state-disabled",
-		"sPageButtonStaticDisabled": "fg-button ui-button ui-state-default ui-state-disabled",
+		"sPagemessagestaticDisabled": "fg-button ui-button ui-state-default ui-state-disabled",
 		"sPageFirst": "first ui-corner-tl ui-corner-bl",
 		"sPageLast": "last ui-corner-tr ui-corner-br",
 		
 		/* Features */
-		"sPaging": "dataTables_paginate fg-buttonset ui-buttonset fg-buttonset-multi "+
-			"ui-buttonset-multi paging_", /* Note that the type is postfixed */
+		"sPaging": "dataTables_paginate fg-messageset ui-messageset fg-messageset-multi "+
+			"ui-messageset-multi paging_", /* Note that the type is postfixed */
 		
 		/* Sorting */
 		"sSortAsc": "ui-state-default",
@@ -11551,7 +11551,7 @@
 		"two_button": {
 			/*
 			 * Function: oPagination.two_button.fnInit
-			 * Purpose:  Initialise dom elements required for pagination with forward/back buttons only
+			 * Purpose:  Initialise dom elements required for pagination with forward/back messages only
 			 * Returns:  -
 			 * Inputs:   object:oSettings - dataTables settings object
 			 *           node:nPaging - the DIV which contains this pagination control
@@ -11696,7 +11696,7 @@
 			
 			/*
 			 * Function: oPagination.full_numbers.fnUpdate
-			 * Purpose:  Update the list of page buttons shows
+			 * Purpose:  Update the list of page messages shows
 			 * Returns:  -
 			 * Inputs:   object:oSettings - dataTables settings object
 			 *           function:fnCallbackDraw - draw function to call on page change
@@ -11715,7 +11715,7 @@
 				var sList = "";
 				var iStartButton, iEndButton, i, iLen;
 				var oClasses = oSettings.oClasses;
-				var anButtons, anStatic, nPaginateList, nNode;
+				var anmessages, anStatic, nPaginateList, nNode;
 				var an = oSettings.aanFeatures.p;
 				var fnBind = function (j) {
 					oSettings.oApi._fnBindAction( this, {"page": j+iStartButton-1}, function(e) {
@@ -11778,21 +11778,21 @@
 						.children('a').each( fnBind );
 					
 					/* Update the permanent button's classes */
-					anButtons = nNode.getElementsByTagName('a');
+					anmessages = nNode.getElementsByTagName('a');
 					anStatic = [
-						anButtons[0], anButtons[1], 
-						anButtons[anButtons.length-2], anButtons[anButtons.length-1]
+						anmessages[0], anmessages[1],
+						anmessages[anmessages.length-2], anmessages[anmessages.length-1]
 					];
 	
-					$(anStatic).removeClass( oClasses.sPageButton+" "+oClasses.sPageButtonActive+" "+oClasses.sPageButtonStaticDisabled );
+					$(anStatic).removeClass( oClasses.sPageButton+" "+oClasses.sPageButtonActive+" "+oClasses.sPagemessagestaticDisabled );
 					$([anStatic[0], anStatic[1]]).addClass( 
 						(iCurrentPage==1) ?
-							oClasses.sPageButtonStaticDisabled :
+							oClasses.sPagemessagestaticDisabled :
 							oClasses.sPageButton
 					);
 					$([anStatic[2], anStatic[3]]).addClass(
 						(iPages===0 || iCurrentPage===iPages || oSettings._iDisplayLength===-1) ?
-							oClasses.sPageButtonStaticDisabled :
+							oClasses.sPagemessagestaticDisabled :
 							oClasses.sPageButton
 					);
 				}

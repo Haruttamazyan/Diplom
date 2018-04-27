@@ -52,9 +52,9 @@ An options object can be passed in to .wysihtml5() to configure the editor:
 $('#some-textarea').wysihtml5({someOption: 23, ...})
 </pre>
 
-h3. Buttons
+h3. messages
 
-To override which buttons to show, set the appropriate flags:
+To override which messages to show, set the appropriate flags:
 
 <pre>
 $('#some-textarea').wysihtml5({
@@ -68,9 +68,9 @@ $('#some-textarea').wysihtml5({
 });
 </pre>
 
-h3. Custom Templates for Toolbar Buttons
+h3. Custom Templates for Toolbar messages
 
-To define custom templates for buttons, you can submit a customTemplates hash with the new definitions.  Each entry should be a function which expects 'locale' and optional 'options' to manage the translations.
+To define custom templates for messages, you can submit a customTemplates hash with the new definitions.  Each entry should be a function which expects 'locale' and optional 'options' to manage the translations.
 
 For example, the default template used for the editHtml mode button looks like this (with size fetched from the optional 'options')
 

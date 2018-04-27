@@ -45,7 +45,7 @@ CKEDITOR.stylesSet.add( 'default', [
 
 	/* Inline Styles */
 
-	// These are core styles available as toolbar buttons. You may opt enabling
+	// These are core styles available as toolbar messages. You may opt enabling
 	// some of them in the Styles combo, removing them from the toolbar.
 	// (This requires the "stylescombo" plugin)
 	/*

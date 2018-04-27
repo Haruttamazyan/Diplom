@@ -15968,7 +15968,7 @@ var BFHTimezonesList = {
     initInput: function() {
       var value;
       
-      if (this.options.buttons === true) {
+      if (this.options.messages === true) {
         this.$element.wrap('<div class="input-group"></div>');
         this.$element.parent().append('<span class="input-group-addon bfh-number-btn inc"><span class="glyphicon glyphicon-chevron-up"></span></span>');
         this.$element.parent().append('<span class="input-group-addon bfh-number-btn dec"><span class="glyphicon glyphicon-chevron-down"></span></span>');
@@ -15980,7 +15980,7 @@ var BFHTimezonesList = {
         this.$element.on('keydown.bfhnumber.data-api', BFHNumber.prototype.keydown);
       }
       
-      if (this.options.buttons === true) {
+      if (this.options.messages === true) {
         this.$element.parent()
           .on('mousedown.bfhnumber.data-api', '.inc', BFHNumber.prototype.btninc)
           .on('mousedown.bfhnumber.data-api', '.dec', BFHNumber.prototype.btndec);
@@ -16194,7 +16194,7 @@ var BFHTimezonesList = {
     max: 9999,
     zeros: false,
     keyboard: true,
-    buttons: true,
+    messages: true,
     wrap: false
   };
 

@@ -17,8 +17,8 @@ CKEDITOR.on( 'instanceReady', function( ev ) {
 	// Show the editor name and description in the browser status bar.
 	document.getElementById( 'eMessage' ).innerHTML = 'Instance <code>' + ev.editor.name + '<\/code> loaded.';
 
-	// Show this sample buttons.
-	document.getElementById( 'eButtons' ).style.display = 'block';
+	// Show this sample messages.
+	document.getElementById( 'emessages' ).style.display = 'block';
 });
 
 function InsertHTML() {
@@ -170,7 +170,7 @@ function onBlur() {
 		<p id="eMessage">
 		</p>
 
-		<div id="eButtons" style="display: none">
+		<div id="emessages" style="display: none">
 			<input id="exec-bold" onclick="ExecuteCommand('bold');" type="button" value="Execute &quot;bold&quot; Command">
 			<input id="exec-link" onclick="ExecuteCommand('link');" type="button" value="Execute &quot;link&quot; Command">
 			<input onclick="Focus();" type="button" value="Focus">

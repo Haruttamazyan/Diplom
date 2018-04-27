@@ -2,7 +2,7 @@
 $.extend( DataTable.ext.oStdClasses, {
 	"sTable": "dataTable",
 
-	/* Two buttons buttons */
+	/* Two messages messages */
 	"sPagePrevEnabled": "paginate_enabled_previous",
 	"sPagePrevDisabled": "paginate_disabled_previous",
 	"sPageNextEnabled": "paginate_enabled_next",
@@ -10,10 +10,10 @@ $.extend( DataTable.ext.oStdClasses, {
 	"sPageJUINext": "",
 	"sPageJUIPrev": "",
 	
-	/* Full numbers paging buttons */
+	/* Full numbers paging messages */
 	"sPageButton": "paginate_button",
 	"sPageButtonActive": "paginate_active",
-	"sPageButtonStaticDisabled": "paginate_button paginate_button_disabled",
+	"sPagemessagestaticDisabled": "paginate_button paginate_button_disabled",
 	"sPageFirst": "first",
 	"sPagePrevious": "previous",
 	"sPageNext": "next",
@@ -66,7 +66,7 @@ $.extend( DataTable.ext.oStdClasses, {
 
 
 $.extend( DataTable.ext.oJUIClasses, DataTable.ext.oStdClasses, {
-	/* Two buttons buttons */
+	/* Two messages messages */
 	"sPagePrevEnabled": "fg-button ui-button ui-state-default ui-corner-left",
 	"sPagePrevDisabled": "fg-button ui-button ui-state-default ui-corner-left ui-state-disabled",
 	"sPageNextEnabled": "fg-button ui-button ui-state-default ui-corner-right",
@@ -74,16 +74,16 @@ $.extend( DataTable.ext.oJUIClasses, DataTable.ext.oStdClasses, {
 	"sPageJUINext": "ui-icon ui-icon-circle-arrow-e",
 	"sPageJUIPrev": "ui-icon ui-icon-circle-arrow-w",
 	
-	/* Full numbers paging buttons */
+	/* Full numbers paging messages */
 	"sPageButton": "fg-button ui-button ui-state-default",
 	"sPageButtonActive": "fg-button ui-button ui-state-default ui-state-disabled",
-	"sPageButtonStaticDisabled": "fg-button ui-button ui-state-default ui-state-disabled",
+	"sPagemessagestaticDisabled": "fg-button ui-button ui-state-default ui-state-disabled",
 	"sPageFirst": "first ui-corner-tl ui-corner-bl",
 	"sPageLast": "last ui-corner-tr ui-corner-br",
 	
 	/* Features */
-	"sPaging": "dataTables_paginate fg-buttonset ui-buttonset fg-buttonset-multi "+
-		"ui-buttonset-multi paging_", /* Note that the type is postfixed */
+	"sPaging": "dataTables_paginate fg-messageset ui-messageset fg-messageset-multi "+
+		"ui-messageset-multi paging_", /* Note that the type is postfixed */
 	
 	/* Sorting */
 	"sSortAsc": "ui-state-default",

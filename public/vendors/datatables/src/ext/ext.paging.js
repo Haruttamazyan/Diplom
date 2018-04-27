@@ -12,7 +12,7 @@ $.extend( DataTable.ext.oPagination, {
 	"two_button": {
 		/*
 		 * Function: oPagination.two_button.fnInit
-		 * Purpose:  Initialise dom elements required for pagination with forward/back buttons only
+		 * Purpose:  Initialise dom elements required for pagination with forward/back messages only
 		 * Returns:  -
 		 * Inputs:   object:oSettings - dataTables settings object
 		 *           node:nPaging - the DIV which contains this pagination control
@@ -157,7 +157,7 @@ $.extend( DataTable.ext.oPagination, {
 		
 		/*
 		 * Function: oPagination.full_numbers.fnUpdate
-		 * Purpose:  Update the list of page buttons shows
+		 * Purpose:  Update the list of page messages shows
 		 * Returns:  -
 		 * Inputs:   object:oSettings - dataTables settings object
 		 *           function:fnCallbackDraw - draw function to call on page change
@@ -176,7 +176,7 @@ $.extend( DataTable.ext.oPagination, {
 			var sList = "";
 			var iStartButton, iEndButton, i, iLen;
 			var oClasses = oSettings.oClasses;
-			var anButtons, anStatic, nPaginateList, nNode;
+			var anmessages, anStatic, nPaginateList, nNode;
 			var an = oSettings.aanFeatures.p;
 			var fnBind = function (j) {
 				oSettings.oApi._fnBindAction( this, {"page": j+iStartButton-1}, function(e) {
@@ -239,21 +239,21 @@ $.extend( DataTable.ext.oPagination, {
 					.children('a').each( fnBind );
 				
 				/* Update the permanent button's classes */
-				anButtons = nNode.getElementsByTagName('a');
+				anmessages = nNode.getElementsByTagName('a');
 				anStatic = [
-					anButtons[0], anButtons[1], 
-					anButtons[anButtons.length-2], anButtons[anButtons.length-1]
+					anmessages[0], anmessages[1],
+					anmessages[anmessages.length-2], anmessages[anmessages.length-1]
 				];
 
-				$(anStatic).removeClass( oClasses.sPageButton+" "+oClasses.sPageButtonActive+" "+oClasses.sPageButtonStaticDisabled );
+				$(anStatic).removeClass( oClasses.sPageButton+" "+oClasses.sPageButtonActive+" "+oClasses.sPagemessagestaticDisabled );
 				$([anStatic[0], anStatic[1]]).addClass( 
 					(iCurrentPage==1) ?
-						oClasses.sPageButtonStaticDisabled :
+						oClasses.sPagemessagestaticDisabled :
 						oClasses.sPageButton
 				);
 				$([anStatic[2], anStatic[3]]).addClass(
 					(iPages===0 || iCurrentPage===iPages || oSettings._iDisplayLength===-1) ?
-						oClasses.sPageButtonStaticDisabled :
+						oClasses.sPagemessagestaticDisabled :
 						oClasses.sPageButton
 				);
 			}
