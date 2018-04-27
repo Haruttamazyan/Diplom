@@ -1,0 +1,11 @@
+.DS_Store
+
+# Dependency directory
+node_modules/
+
+#idea files
+.idea/
+
+
+package-lock.json
+
