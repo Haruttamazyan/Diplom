@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const student = require('../Controllers/Student');
+const message = require('../Controllers/Message');
 
 
 router.get('/home',isLoggedIn,(req,res)=>{
@@ -18,7 +19,7 @@ router.get('/calendar',isLoggedIn,(req,res)=>{
 
 });
 
-router.get('/tables',isLoggedIn,student.get_students);
+router.get('/tables',isLoggedIn,student.index);
 
 
 router.get('/stats',isLoggedIn,(req,res)=>{
@@ -28,13 +29,9 @@ router.get('/stats',isLoggedIn,(req,res)=>{
     });
 
 });
-router.get('/messages',isLoggedIn,(req,res)=>{
-    //console.log(req.user);
-    res.render('pages/messages', {
-        user : req.user // get the user out of session and pass to template
-    });
+router.get('/messages',isLoggedIn,message.index);
 
-});
+
 router.get('/editors',isLoggedIn,(req,res)=>{
     //console.log(req.user);
     res.render('pages/editors', {

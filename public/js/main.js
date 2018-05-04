@@ -31,5 +31,8 @@ $(document).ready(function(){
     $('#add-student').click(()=>{
        $('#myForm').submit();
     });
-  
+
+
+
+
 });

@@ -2,6 +2,8 @@ const database = require('../config/database/database');
 
 const con = database.connect();
 
+const student = require('../models/student');
+
 let obj = {};
 
 
@@ -16,7 +18,7 @@ obj.add_student = (req,res)=>{
 
 
     //let sql = `INSERT INTO students (user_id,name, lastname, email,your_group, phone, password) VALUES (${user_id}, ${name},${lastname},${email},${group},${phone},${pwd})`;
-    let insertQuery = "INSERT INTO students ( user_id,name, lastname, email,your_group, phone, password ) values ('" + user_id + "','" + name + "','" + lastname + "','" + email + "','" + group + "','" + phone + "','" + pwd + "')";
+    let insertQuery = "INSERT INTO students ( user_id,name, lastname, email,hph_group, phone, password ) values ('" + user_id + "','" + name + "','" + lastname + "','" + email + "','" + group + "','" + phone + "','" + pwd + "')";
 
   //  console.log(req.body,sql);
     con.query(insertQuery, function (err, result) {
@@ -27,8 +29,8 @@ obj.add_student = (req,res)=>{
 
 
 };
-obj.get_students = (req,res)=>{
-    let sql = "SELECT * FROM students WHERE user_id='"+req.user.id;
+obj.index = (req,res)=>{
+    /*let sql = "SELECT * FROM students WHERE user_id="+req.user.id;
     con.query(sql,(err,student)=>{
         if (err) throw err;
 
@@ -37,6 +39,12 @@ obj.get_students = (req,res)=>{
             user : req.user // get the user out of session and pass to template
         });
 
+    })*/
+    student.getall_students(req.user.id,(student)=>{
+        res.render('pages/tables', {
+            students: student,
+            user : req.user // get the user out of session and pass to template
+        });
     })
 
 

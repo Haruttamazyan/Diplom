@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap Admin Theme v3</title>
+    <title><img src="/images/sayteri-hamar.bmp" alt='' height="40px"> v3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- jQuery UI -->
     <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
@@ -11,14 +11,15 @@
     <!-- styles -->
     <link href="/css/styles.css" rel="stylesheet">
 
-    <link href="/css/messages.css" rel="stylesheet">
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
   </head>
   <body>
   	<div class="header">
@@ -27,7 +28,7 @@
 	           <div class="col-md-5">
 	              <!-- Logo -->
 	              <div class="logo">
-	                 <h1><a href="/">Bootstrap Admin Theme</a></h1>
+                    <h1><a href="/"><img src="/images/sayteri-hamar.bmp" alt='' height="40px"></a></h1>
 	              </div>
 	           </div>
 	           <div class="col-md-5">
@@ -50,7 +51,7 @@
 	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
 	                        <ul class="dropdown-menu animated fadeInUp">
 	                          <li><a href="/profile">Profile</a></li>
-	                          <li><a href="/login">Logout</a></li>
+	                          <li><a href="/logout">Logout</a></li>
 	                        </ul>
 	                      </li>
 	                    </ul>
@@ -67,7 +68,8 @@
 		  	<div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li><a href="/"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
+
+                  <li><a href="/"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
                     <li><a href="/calendar"><i class="glyphicon glyphicon-calendar"></i> Calendar</a></li>
                     <li><a href="/stats"><i class="glyphicon glyphicon-user"></i> Profile</a></li>
                     <li><a href="/tables"><i class="glyphicon glyphicon-list"></i> Tables</a></li>
@@ -80,1067 +82,910 @@
 		  </div>
 		  <div class="col-md-10">
 
-          <div class="row">
-          <div class="col-md-6">
-            <div class="content-box-large">
-              <div class="panel-body">
-                    <h4>Extra Small messages</h4>
-                    <p>
-                      <button class="btn btn-default btn-xs">Default</button>
-                      <button class="btn btn-primary btn-xs">Primary</button>
-                      <button class="btn btn-info btn-xs">Info</button>
-                      <button class="btn btn-success btn-xs">Success</button>
-                      <button class="btn btn-warning btn-xs">Warning</button>
-                      <button class="btn btn-danger btn-xs">Danger</button>
-                    </p>
-                    <h4>Small messages</h4>
-                    <p>
-                      <button class="btn btn-default btn-sm">Default</button>
-                      <button class="btn btn-primary btn-sm">Primary</button>
-                      <button class="btn btn-info btn-sm">Info</button>
-                      <button class="btn btn-success btn-sm">Success</button>
-                      <button class="btn btn-warning btn-sm">Warning</button>
-                      <button class="btn btn-danger btn-sm">Danger</button>
-                    </p>
-                    <h4>Normal messages</h4>
-                    <p>
-                      <button class="btn btn-default">Default</button>
-                      <button class="btn btn-primary">Primary</button>
-                      <button class="btn btn-info">Info</button>
-                      <button class="btn btn-success">Success</button>
-                      <button class="btn btn-warning">Warning</button>
-                      <button class="btn btn-danger">Danger</button>
-                    </p>
-                    <h4>Large messages</h4>
-                    <p>
-                      <button class="btn btn-default btn-lg">Default</button>
-                      <button class="btn btn-primary btn-lg">Primary</button>
-                      <button class="btn btn-info btn-lg">Info</button>
-                      <button class="btn btn-success btn-lg">Success</button>
-                      <button class="btn btn-warning btn-lg">Warning</button>
-                      <button class="btn btn-danger btn-lg">Danger</button>
-                    </p>
-
-                    <div class="well" style="margin-top:30px;">
-                        <button type="button" class="btn btn-lg btn-block btn-primary">Block level Primary button</button>
-                        <button type="button" class="btn btn-lg btn-block btn-default">Block level Default button</button>
-                      </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="content-box-large">
-              <div class="panel-body">
-                <h4>Button Dropdowns</h4>
-                <p>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                      Default <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                      Primary <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-                      Info <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-                      Success <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
-                      Warning <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-                      Danger <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </div>
-                </p>
-
-                <h4>Split Button Dropdowns</h4>
-                <p>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default">Default</button>
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                      <span class="caret"></span>
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                      <span class="caret"></span>
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-info">Info</button>
-                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-                      <span class="caret"></span>
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-success">Success</button>
-                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-                      <span class="caret"></span>
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-warning">Warning</button>
-                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
-                      <span class="caret"></span>
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-danger">Danger</button>
-                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-                      <span class="caret"></span>
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                    </ul>
-                  </div>
-                </p>
-
-                <h4>messages With Icons</h4>
-                <p>This is an example messages with icons. About 140 icons are available.</p>
-                <p>
-                      <button class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i> View</button>
-                      <button class="btn btn-info"><i class="glyphicon glyphicon-refresh"></i> Update</button>
-                      <button class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Edit</button>
-                      <button class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i> Delete</button>
-                </p>
-
-                <p>And there this is a toolbar icon example</p>
-                <p>
-                      <div class="btn-group">
-                        <button class="btn btn-default"><i class="glyphicon glyphicon-step-backward"></i></button>
-                        <button class="btn btn-default"><i class="glyphicon glyphicon-fast-backward"></i></button>
-                        <button class="btn btn-default"><i class="glyphicon glyphicon-backward"></i></button>
-                        <button class="btn btn-default"><i class="glyphicon glyphicon-play"></i></button>
-                        <button class="btn btn-default"><i class="glyphicon glyphicon-pause"></i></button>
-                        <button class="btn btn-default"><i class="glyphicon glyphicon-stop"></i></button>
-                        <button class="btn btn-default"><i class="glyphicon glyphicon-forward"></i></button>
-                        <button class="btn btn-default"><i class="glyphicon glyphicon-fast-forward"></i></button>
-                        <button class="btn btn-default"><i class="glyphicon glyphicon-step-forward"></i></button>
-                      </div>
-                </p>
 
 
-              </div>
-            </div>
-          </div>
-
-        </div>
 
       <!-- Icons -->
       <div class="row">
           <div class="col-md-12 panel-warning">
             <div class="content-box-header panel-heading">
-              <div class="panel-title ">Available Icons</div>
-            
-              <div class="panel-options">
-                <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
-                <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
-              </div>
+              <div class="panel-title ">Messages</div>
             </div>
             <div class="content-box-large box-with-header">
-              <ul class="bs-glyphicons">
-                <li>
-                  <span class="glyphicon glyphicon-adjust"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-adjust</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-align-center"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-align-center</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-align-justify"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-align-justify</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-align-left"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-align-left</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-align-right"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-align-right</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-arrow-down"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-arrow-down</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-arrow-left"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-arrow-left</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-arrow-right"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-arrow-right</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-arrow-up"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-arrow-up</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-asterisk"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-asterisk</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-backward"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-backward</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-ban-circle"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-ban-circle</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-barcode"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-barcode</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-bell"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-bell</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-bold"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-bold</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-book"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-book</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-bookmark"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-bookmark</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-briefcase"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-briefcase</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-bullhorn"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-bullhorn</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-calendar"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-calendar</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-camera"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-camera</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-certificate"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-certificate</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-check"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-check</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-chevron-down"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-chevron-down</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-chevron-left</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-chevron-right</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-chevron-up"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-chevron-up</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-circle-arrow-down"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-circle-arrow-down</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-circle-arrow-left"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-circle-arrow-left</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-circle-arrow-right"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-circle-arrow-right</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-circle-arrow-up"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-circle-arrow-up</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-cloud"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-cloud</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-cloud-download"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-cloud-download</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-cloud-upload"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-cloud-upload</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-cog"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-cog</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-collapse-down"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-collapse-down</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-collapse-up"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-collapse-up</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-comment"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-comment</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-compressed"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-compressed</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-copyright-mark"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-copyright-mark</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-credit-card"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-credit-card</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-cutlery"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-cutlery</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-dashboard"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-dashboard</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-download"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-download</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-download-alt"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-download-alt</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-earphone"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-earphone</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-edit"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-edit</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-eject"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-eject</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-envelope"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-envelope</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-euro"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-euro</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-exclamation-sign"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-exclamation-sign</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-expand"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-expand</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-export"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-export</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-eye-close"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-eye-close</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-eye-open"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-eye-open</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-facetime-video"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-facetime-video</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-fast-backward"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-fast-backward</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-fast-forward"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-fast-forward</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-file"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-file</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-film"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-film</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-filter"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-filter</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-fire"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-fire</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-flag"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-flag</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-flash"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-flash</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-floppy-disk"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-floppy-disk</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-floppy-open"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-floppy-open</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-floppy-remove"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-floppy-remove</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-floppy-save"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-floppy-save</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-floppy-saved"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-floppy-saved</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-folder-close"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-folder-close</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-folder-open"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-folder-open</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-font"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-font</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-forward"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-forward</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-fullscreen"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-fullscreen</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-gbp"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-gbp</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-gift"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-gift</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-glass"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-glass</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-globe"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-globe</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-hand-down"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-hand-down</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-hand-left"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-hand-left</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-hand-right"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-hand-right</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-hand-up"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-hand-up</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-hd-video"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-hd-video</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-hdd"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-hdd</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-header"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-header</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-headphones"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-headphones</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-heart"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-heart</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-heart-empty"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-heart-empty</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-home"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-home</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-import"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-import</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-inbox"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-inbox</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-indent-left"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-indent-left</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-indent-right"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-indent-right</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-info-sign"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-info-sign</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-italic"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-italic</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-leaf"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-leaf</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-link"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-link</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-list"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-list</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-list-alt"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-list-alt</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-lock"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-lock</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-log-in"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-log-in</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-log-out"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-log-out</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-magnet"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-magnet</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-map-marker"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-map-marker</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-minus"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-minus</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-minus-sign"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-minus-sign</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-move"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-move</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-music"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-music</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-new-window"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-new-window</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-off"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-off</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-ok"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-ok</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-ok-circle"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-ok-circle</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-ok-sign"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-ok-sign</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-open"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-open</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-paperclip"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-paperclip</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-pause"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-pause</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-pencil"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-pencil</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-phone"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-phone</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-phone-alt"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-phone-alt</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-picture"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-picture</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-plane"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-plane</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-play"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-play</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-play-circle"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-play-circle</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-plus"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-plus</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-plus-sign"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-plus-sign</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-print"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-print</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-pushpin"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-pushpin</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-qrcode"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-qrcode</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-question-sign"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-question-sign</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-random"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-random</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-envelope"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-envelope</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-refresh"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-refresh</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-registration-mark"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-registration-mark</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-remove"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-remove</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-remove-circle"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-remove-circle</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-remove-sign"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-remove-sign</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-repeat"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-repeat</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-resize-full"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-resize-full</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-resize-horizontal"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-resize-horizontal</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-resize-small"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-resize-small</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-resize-vertical"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-resize-vertical</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-retweet"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-retweet</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-road"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-road</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-save"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-save</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-saved"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-saved</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-screenshot"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-screenshot</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-sd-video"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-sd-video</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-search"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-search</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-send"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-send</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-share"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-share</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-share-alt"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-share-alt</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-shopping-cart"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-shopping-cart</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-signal"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-signal</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-sort"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-sort</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-sort-by-alphabet"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-sort-by-alphabet</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-sort-by-alphabet-alt"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-sort-by-alphabet-alt</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-sort-by-attributes"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-sort-by-attributes</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-sort-by-attributes-alt"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-sort-by-attributes-alt</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-sort-by-order"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-sort-by-order</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-sort-by-order-alt"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-sort-by-order-alt</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-sound-5-1"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-sound-5-1</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-sound-6-1"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-sound-6-1</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-sound-7-1"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-sound-7-1</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-sound-dolby"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-sound-dolby</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-sound-stereo"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-sound-stereo</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-star</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-star-empty"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-star-empty</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-user"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-user</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-step-backward"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-step-backward</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-step-forward"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-step-forward</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-stop"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-stop</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-subtitles"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-subtitles</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-tag"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-tag</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-tags"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-tags</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-tasks"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-tasks</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-text-height"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-text-height</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-text-width"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-text-width</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-th"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-th</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-th-large"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-th-large</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-th-list"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-th-list</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-thumbs-down"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-thumbs-down</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-thumbs-up"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-thumbs-up</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-time"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-time</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-tint"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-tint</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-tower"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-tower</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-transfer"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-transfer</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-trash"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-trash</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-tree-conifer"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-tree-conifer</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-tree-deciduous"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-tree-deciduous</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-unchecked"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-unchecked</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-upload"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-upload</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-usd"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-usd</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-user"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-user</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-volume-down"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-volume-down</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-volume-off"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-volume-off</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-volume-up"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-volume-up</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-warning-sign"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-warning-sign</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-wrench"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-wrench</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-zoom-in"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-zoom-in</span>
-                </li>
-                <li>
-                  <span class="glyphicon glyphicon-zoom-out"></span>
-                  <span class="glyphicon-class">glyphicon glyphicon-zoom-out</span>
-                </li>
-              </ul>
+
+
+
+              <div class="container">
+                <div class="panel messages-panel">
+                  <div class="contacts-list">
+                   <!-- <div class="inbox-categories">
+                      <div data-toggle="tab" data-target="#inbox" class="active"> Inbox </div>
+
+                    </div>-->
+                    <div class="tab-content">
+                      <div id="inbox" class="contacts-outter-wrapper tab-pane active">
+                        <form class="panel-search-form info form-group has-feedback no-margin-bottom">
+                          <input type="text" class="form-control" name="search" placeholder="Search">
+                          <span class="fa fa-search form-control-feedback"></span>
+                        </form>
+                        <div class="contacts-outter">
+                          <ul class="list-unstyled contacts">
+
+                            <% students.forEach(function(student) { %>
+
+                            <li data-toggle="tab" data-target="#inbox-message-<%= student.id%>"  class="names" onclick="clickact(this)">
+                              <div class="message-count"> 1 </div>
+                              <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                              <div class="vcentered info-combo">
+                                <h3 class="no-margin-bottom name"> <%= student.name + " " + student.lastname%> </h3>
+                                <h5> Hah, too late, I already bought it and my team is impleting the new design right now.</h5>
+                              </div>
+                              <div class="contacts-add">
+                               <!-- <p class="no-margin-bottom name"> <%= student.hph_group %> </p>-->
+                                <span class="message-time"> 2:32 <sup>AM</sup></span>
+                                <i class="fa fa-trash-o"></i>
+                                <i class="fa fa-paperclip"></i>
+                              </div>
+                            </li>
+
+                               <% }); %>
+
+
+                           <!-- <li data-toggle="tab" data-target="#inbox-message-1" class="active">
+                              <div class="message-count"> 1 </div>
+                              <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                              <div class="vcentered info-combo">
+                                <h3 class="no-margin-bottom name"> John Doe </h3>
+                                <h5> Hah, too late, I already bought it and my team is impleting the new design right now.</h5>
+                              </div>
+                              <div class="contacts-add">
+                                <span class="message-time"> 2:32 <sup>AM</sup></span>
+                                <i class="fa fa-trash-o"></i>
+                                <i class="fa fa-paperclip"></i>
+                              </div>
+                            </li>-->
+
+                            <!--<li data-toggle="tab" data-target="#inbox-message-2">
+                              <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                              <div class="vcentered info-combo">
+                                <h3 class="no-margin-bottom name"> John Doe </h3>
+                                <h5> Of course, just call me before that, in case I forget. </h5>
+                              </div>
+                              <div class="contacts-add">
+                                <span class="message-time"> 3:56 <sup>AM</sup></span>
+                                <i class="fa fa-trash-o"></i>
+                                <i class="fa fa-paperclip"></i>
+                              </div>
+                            </li>-->
+
+                            <!--<li data-toggle="tab" data-target="#inbox-message-3">
+                              <div class="message-count"> 1 </div>
+                              <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                              <div class="vcentered info-combo">
+                                <h3 class="no-margin-bottom name"> John Doe</h3>
+                                <h5> Hey, you asked for my feedback, it's brilliant. Damn, I</h5>
+                              </div>
+                              <div class="contacts-add">
+                                <span class="message-time"> 5:21 <sup>AM</sup></span>
+                                <i class="fa fa-trash-o"></i>
+                                <i class="fa fa-paperclip"></i>
+                              </div>
+                            </li>-->
+
+                            <!--<li data-toggle="tab" data-target="#inbox-message-4">
+                              <div class="message-count"> 2 </div>
+                              <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                              <div class="vcentered info-combo">
+                                <h3 class="no-margin-bottom name"> John Doe </h3>
+                                <h5> And invite Daniel too, please </h5>
+                              </div>
+                              <div class="contacts-add">
+                                <span class="message-time"> 6:13 <sup>AM</sup></span>
+                                <i class="fa fa-trash-o"></i>
+                                <i class="fa fa-paperclip"></i>
+                              </div>
+                            </li>-->
+
+                          </ul>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="">
+
+
+
+                    <div class="tab-pane message-body " id="inbox-message-1">
+
+                      <div class="message-chat">
+                        <div class="chat-body">
+                          <div class="message info">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-info">
+                                <h4> Elon Musk </h4>
+                                <h5> <i class="fa fa-clock-o"></i> 2:25 PM </h5>
+                              </div>
+                              <hr>
+                              <div class="message-text">
+                                I've seen your new template, Dauphin, it's amazing !
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message my-message">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-body-inner">
+                                <div class="message-info">
+                                  <h4> Dennis Novac </h4>
+                                  <h5> <i class="fa fa-clock-o"></i> 2:28 PM </h5>
+                                </div>
+                                <hr>
+                                <div class="message-text">
+                                  Thanks, I think I will use this for my next dashboard system.
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message info">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-info">
+                                <h4> Elon Musk </h4>
+                                <h5> <i class="fa fa-clock-o"></i> 2:32 PM </h5>
+                              </div>
+                              <hr>
+                              <div class="message-text">
+                                Hah, too late, I already bought it and my team is impleting the new design right now.
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+                        </div>
+
+                        <div class="chat-footer">
+                          <textarea class="send-message-text"></textarea>
+                          <label class="upload-file">
+                            <input type="file" required="">
+                            <i class="fa fa-paperclip"></i>
+                          </label>
+                          <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+
+
+
+                    <!--/////////////////////////////////////////////-->
+                    <!--<div class="tab-pane message-body" id="inbox-message-2">
+                      <div class="message-top">
+                        <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                        <div class="new-message-wrapper">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Send message to...">
+                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                          </div>
+
+                          <div class="chat-footer new-message-textarea">
+                            <textarea class="send-message-text"></textarea>
+                            <label class="upload-file">
+                              <input type="file" required="">
+                              <i class="fa fa-paperclip"></i>
+                            </label>
+                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="message-chat">
+                        <div class="chat-body">
+                          <div class="message info">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-info">
+                                <h4> Mark Zuckerberg </h4>
+                                <h5> <i class="fa fa-clock-o"></i> 3:45 PM </h5>
+                              </div>
+                              <hr>
+                              <div class="message-text">
+                                Hi, Dennis. How's it going with your latest project?
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message my-message">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-body-inner">
+                                <div class="message-info">
+                                  <h4> Dennis Novac </h4>
+                                  <h5> <i class="fa fa-clock-o"></i> 3:52 PM </h5>
+                                </div>
+                                <hr>
+                                <div class="message-text">
+                                  Hello. It's going well, thanks, but I may need your help tomorrow evening. Will you be available ?
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message info">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-info">
+                                <h4> Mark Zuckerberg </h4>
+                                <h5> <i class="fa fa-clock-o"></i> 3:56 PM </h5>
+                              </div>
+                              <hr>
+                              <div class="message-text">
+                                Of course, just call me before that, in case I forget.
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message my-message">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-body-inner">
+                                <div class="message-info">
+                                  <h4> Dennis Novac </h4>
+                                  <h5> <i class="fa fa-clock-o"></i> 4:01 PM </h5>
+                                </div>
+                                <hr>
+                                <div class="message-text">
+                                  Great, thank you.
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                        </div>
+
+                        <div class="chat-footer">
+                          <textarea class="send-message-text"></textarea>
+                          <label class="upload-file">
+                            <input type="file" required="">
+                            <i class="fa fa-paperclip"></i>
+                          </label>
+                          <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                        </div>
+                      </div>
+                    </div>
+-->
+
+
+
+
+                    <!--<div class="tab-pane message-body" id="inbox-message-3">
+                      <div class="message-top">
+                        <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                        <div class="new-message-wrapper">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Send message to...">
+                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                          </div>
+
+                          <div class="chat-footer new-message-textarea">
+                            <textarea class="send-message-text"></textarea>
+                            <label class="upload-file">
+                              <input type="file" required="">
+                              <i class="fa fa-paperclip"></i>
+                            </label>
+                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="message-chat">
+                        <div class="chat-body">
+                          <div class="message info">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-info">
+                                <h4> Evan Williams </h4>
+                                <h5> <i class="fa fa-clock-o"></i> 5:07 PM </h5>
+                              </div>
+                              <hr>
+                              <div class="message-text">
+                                Hey, you asked for my feedback, it's brilliant. Damn, I envy you I didn't come up with something this good :D Keep it up, man, it's going to be very popular. Trust me !
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message my-message">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-body-inner">
+                                <div class="message-info">
+                                  <h4> Dennis Novac </h4>
+                                  <h5> <i class="fa fa-clock-o"></i> 5:16 PM </h5>
+                                </div>
+                                <hr>
+                                <div class="message-text">
+                                  Wow, thanks. You'll be my main template tester from now on :)
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message info">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-info">
+                                <h4> Evan Williams </h4>
+                                <h5> <i class="fa fa-clock-o"></i> 5:21 PM </h5>
+                              </div>
+                              <hr>
+                              <div class="message-text">
+                                I'm all in, as long as you continue to make such great templates.
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                        </div>
+
+                        <div class="chat-footer">
+                          <textarea class="send-message-text"></textarea>
+                          <label class="upload-file">
+                            <input type="file" required="">
+                            <i class="fa fa-paperclip"></i>
+                          </label>
+                          <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                        </div>
+                      </div>
+                    </div>-->
+
+
+
+
+                    <!--<div class="tab-pane message-body" id="inbox-message-4">
+                      <div class="message-top">
+                        <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                        <div class="new-message-wrapper">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Send message to...">
+                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                          </div>
+
+                          <div class="chat-footer new-message-textarea">
+                            <textarea class="send-message-text"></textarea>
+                            <label class="upload-file">
+                              <input type="file" required="">
+                              <i class="fa fa-paperclip"></i>
+                            </label>
+                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="message-chat">
+                        <div class="chat-body">
+                          <div class="message info">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-info">
+                                <h4> Jonahtan Ive </h4>
+                                <h5> <i class="fa fa-clock-o"></i> 6:12 PM </h5>
+                              </div>
+                              <hr>
+                              <div class="message-text">
+                                I'm coming to your place at 9 pm and I hope you'll have those tasty brownies again :)
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message my-message">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-body-inner">
+                                <div class="message-info">
+                                  <h4> Dennis Novac </h4>
+                                  <h5> <i class="fa fa-clock-o"></i> 6:16 PM </h5>
+                                </div>
+                                <hr>
+                                <div class="message-text">
+                                  Ye, I still have a bag full of them.
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message info">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-info">
+                                <h4> Jonahtan Ive </h4>
+                                <h5> <i class="fa fa-clock-o"></i> 6:12 PM </h5>
+                              </div>
+                              <hr>
+                              <div class="message-text">
+                                Great, we have a lot of work to do and we need fuel :D
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+                          <div class="message info">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-info">
+                                <h4> Jonahtan Ive </h4>
+                                <h5> <i class="fa fa-clock-o"></i> 6:13 PM </h5>
+                              </div>
+                              <hr>
+                              <div class="message-text">
+                                And invite Daniel too, please.
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                        </div>
+
+                        <div class="chat-footer">
+                          <textarea class="send-message-text"></textarea>
+                          <label class="upload-file">
+                            <input type="file" required="">
+                            <i class="fa fa-paperclip"></i>
+                          </label>
+                          <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                        </div>
+                      </div>
+                    </div>-->
+
+                    <!--<div class="tab-pane message-body" id="sent-message-1">
+                      <div class="message-top">
+                        <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                        <div class="new-message-wrapper">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Send message to...">
+                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                          </div>
+
+                          <div class="chat-footer new-message-textarea">
+                            <textarea class="send-message-text"></textarea>
+                            <label class="upload-file">
+                              <input type="file" required="">
+                              <i class="fa fa-paperclip"></i>
+                            </label>
+                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="message-chat">
+                        <div class="chat-body">
+
+                          <div class="message my-message">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-body-inner">
+                                <div class="message-info">
+                                  <h4> Dennis Novac </h4>
+                                  <h5> <i class="fa fa-clock-o"></i> 2:05 PM </h5>
+                                </div>
+                                <hr>
+                                <div class="message-text">
+                                  Hi, I've just finished the stickers you wanted. I'll send them to you in an archive in 10 minutes.
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message success">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-info">
+                                <h4> David Beckham </h4>
+                                <h5> <i class="fa fa-clock-o"></i> 2:11 PM </h5>
+                              </div>
+                              <hr>
+                              <div class="message-text">
+                                Hello, Dennis. Thanks. Also how's it going with our latest football website. Do you need any additional help or information?
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message success">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-info">
+                                <h4> David Beckham </h4>
+                                <h5> <i class="fa fa-clock-o"></i> 2:24 PM </h5>
+                              </div>
+                              <hr>
+                              <div class="message-text">
+                                I would like to take a look at it this evening, is it possible ?
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message my-message">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-body-inner">
+                                <div class="message-info">
+                                  <h4> Dennis Novac </h4>
+                                  <h5> <i class="fa fa-clock-o"></i> 2:25 PM </h5>
+                                </div>
+                                <hr>
+                                <div class="message-text">
+                                  It's going well, no need for any other help, thanks. Sure, send me a message when you'll be ready.
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                        </div>
+
+                        <div class="chat-footer">
+                          <textarea class="send-message-text"></textarea>
+                          <label class="upload-file">
+                            <input type="file" required="">
+                            <i class="fa fa-paperclip"></i>
+                          </label>
+                          <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                        </div>
+                      </div>
+                    </div>-->
+
+                    <!--<div class="tab-pane message-body" id="sent-message-2">
+                      <div class="message-top">
+                        <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                        <div class="new-message-wrapper">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Send message to...">
+                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                          </div>
+
+                          <div class="chat-footer new-message-textarea">
+                            <textarea class="send-message-text"></textarea>
+                            <label class="upload-file">
+                              <input type="file" required="">
+                              <i class="fa fa-paperclip"></i>
+                            </label>
+                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="message-chat">
+                        <div class="chat-body">
+
+                          <div class="message my-message">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-body-inner">
+                                <div class="message-info">
+                                  <h4> Dennis Novac </h4>
+                                  <h5> <i class="fa fa-clock-o"></i> 12:36 PM </h5>
+                                </div>
+                                <hr>
+                                <div class="message-text">
+                                  Hi, can you please test my new template Dauphin and tell me if you like it ?
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message success">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-info">
+                                <h4> Jeff Williams </h4>
+                                <h5> <i class="fa fa-clock-o"></i> 12:41 PM </h5>
+                              </div>
+                              <hr>
+                              <div class="message-text">
+                                Hello, Dennis. I will take a look at it tomorrow, because I'm already fed up with the current project.
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message my-message">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-body-inner">
+                                <div class="message-info">
+                                  <h4> Dennis Novac </h4>
+                                  <h5> <i class="fa fa-clock-o"></i> 12:46 PM </h5>
+                                </div>
+                                <hr>
+                                <div class="message-text">
+                                  Thanks :)
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                        </div>
+
+                        <div class="chat-footer">
+                          <textarea class="send-message-text"></textarea>
+                          <label class="upload-file">
+                            <input type="file" required="">
+                            <i class="fa fa-paperclip"></i>
+                          </label>
+                          <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                        </div>
+                      </div>
+                    </div>-->
+
+                    <!--<div class="tab-pane message-body" id="marked-message-1">
+                      <div class="message-top">
+                        <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                        <div class="new-message-wrapper">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Send message to...">
+                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                          </div>
+
+                          <div class="chat-footer new-message-textarea">
+                            <textarea class="send-message-text"></textarea>
+                            <label class="upload-file">
+                              <input type="file" required="">
+                              <i class="fa fa-paperclip"></i>
+                            </label>
+                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="message-chat">
+                        <div class="chat-body">
+                          <div class="message warning">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-info">
+                                <h4> Jessica Fresco </h4>
+                                <h5> <i class="fa fa-clock-o"></i> 1:44 PM </h5>
+                              </div>
+                              <hr>
+                              <div class="message-text">
+                                Hello, Dennis. I wanted to let you know we reviewed your proposal and decided you'll start working together with our UI/UX team on Tuesday, January 10th, 2017. Congratulations and thank you!
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message my-message">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-body-inner">
+                                <div class="message-info">
+                                  <h4> Dennis Novac </h4>
+                                  <h5> <i class="fa fa-clock-o"></i> 1:51 PM </h5>
+                                </div>
+                                <hr>
+                                <div class="message-text">
+                                  Hello, great news. I'm sure we're going to make something amazing together!
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                        </div>
+
+                        <div class="chat-footer">
+                          <textarea class="send-message-text"></textarea>
+                          <label class="upload-file">
+                            <input type="file" required="">
+                            <i class="fa fa-paperclip"></i>
+                          </label>
+                          <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                        </div>
+                      </div>
+                    </div>-->
+
+                    <!--<div class="tab-pane message-body" id="marked-message-2">
+                      <div class="message-top">
+                        <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                        <div class="new-message-wrapper">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Send message to...">
+                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                          </div>
+
+                          <div class="chat-footer new-message-textarea">
+                            <textarea class="send-message-text"></textarea>
+                            <label class="upload-file">
+                              <input type="file" required="">
+                              <i class="fa fa-paperclip"></i>
+                            </label>
+                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="message-chat">
+                        <div class="chat-body">
+                          <div class="message warning">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-info">
+                                <h4> Pavel Durov </h4>
+                                <h5> <i class="fa fa-clock-o"></i> 3:23 PM </h5>
+                              </div>
+                              <hr>
+                              <div class="message-text">
+                                Hey, we need your help for our next Telegram re-design. Are you available to talk about this tomorrow evening at around 8 PM ?
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message my-message">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-body-inner">
+                                <div class="message-info">
+                                  <h4> Dennis Novac </h4>
+                                  <h5> <i class="fa fa-clock-o"></i> 3:31 PM </h5>
+                                </div>
+                                <hr>
+                                <div class="message-text">
+                                  Hello, yes I will. It's always a pleasure to work with you and your team :)
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                          <div class="message warning">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-info">
+                                <h4> Pavel Durov </h4>
+                                <h5> <i class="fa fa-clock-o"></i> 3:35 PM </h5>
+                              </div>
+                              <hr>
+                              <div class="message-text">
+                                Perfect, talk to you tomorrow evening.
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                        </div>
+
+                        <div class="chat-footer">
+                          <textarea class="send-message-text"></textarea>
+                          <label class="upload-file">
+                            <input type="file" required="">
+                            <i class="fa fa-paperclip"></i>
+                          </label>
+                          <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                        </div>
+                      </div>
+                    </div>-->
+
+                    <!--<div class="tab-pane message-body" id="draft-message-1">
+                      <div class="message-top">
+                        <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                        <div class="new-message-wrapper">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Send message to...">
+                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                          </div>
+
+                          <div class="chat-footer new-message-textarea">
+                            <textarea class="send-message-text"></textarea>
+                            <label class="upload-file">
+                              <input type="file" required="">
+                              <i class="fa fa-paperclip"></i>
+                            </label>
+                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="message-chat">
+                        <div class="chat-body">
+
+                          <div class="message my-message">
+                            <img alt="" class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+
+                            <div class="message-body">
+                              <div class="message-body-inner">
+                                <div class="message-info">
+                                  <h4> Dennis Novac </h4>
+                                  <h5> <i class="fa fa-clock-o"></i> 4:22 PM </h5>
+                                </div>
+                                <hr>
+                                <div class="message-text">
+                                  Hello, Mila, can you send me the latest pack of icons, I need all the source files. Thanks.
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+                          </div>
+
+                        </div>
+
+                        <div class="chat-footer">
+                          <textarea class="send-message-text"></textarea>
+                          <label class="upload-file">
+                            <input type="file" required="">
+                            <i class="fa fa-paperclip"></i>
+                          </label>
+                          <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                        </div>
+                      </div>
+                    </div>-->
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
             </div>
           </div>
       </div>
@@ -1166,6 +1011,33 @@
     <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+       /* $(document).ready(function() {
+            $(".names:first").addClass("active");
+            $(".names").each(function (i) {
+        let me = this;
+                $(me).on("click", {x: i}, function (event) {
+                    debugger;
+
+                    alert("The " + $(this).index() + ". paragraph has data: " + event.data.x);
+                   //$('.active').removeClass("active");
+                    $(this).addClass("active");
+
+                });
+            });
+        });*/
+
+
+
+
+       function  clickact(me) {
+           //$('this').addClass("active");
+           //me.classList.toggle("active");
+           me.setAttribute("class", "active");
+           console.log(me.classList);
+
+       }
+    </script>
 
 
     <script src="/js/main.js"></script>

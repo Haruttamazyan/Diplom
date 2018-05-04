@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `students` (
   `name` varchar(255) NOT NULL ,
   `lastname` varchar(255) NOT NULL ,
   `email` varchar(255) NOT NULL ,
-  `your_group` varchar(255) NOT NULL,
+  `hph_group` varchar(255) NOT NULL,
   `phone` varchar(255) ,
   `img` varchar(255) ,
   `password` varchar (255)  NOT NULL,
@@ -59,6 +59,17 @@ CREATE TABLE IF NOT EXISTS `user_information` (
   `phone`  varchar(255) NOT NULL,
   `profesion` varchar(255) NOT NULL,
    PRIMARY KEY (`id`)
+  ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+
+  CREATE TABLE IF NOT EXISTS `messages` (
+    `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+    `user_id` int(11) NOT NULL ,
+    `usanox_id` int(11) NOT NULL ,
+    `mess_body` TEXT NOT NULL ,
+    `send_from_user` BIT  DEFAULT 1,
+    `file_path` varchar(255) NOT NULL,
+    `created_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`)
   ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 
