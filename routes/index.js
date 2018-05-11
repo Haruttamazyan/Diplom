@@ -32,13 +32,7 @@ router.get('/stats',isLoggedIn,(req,res)=>{
 router.get('/messages',isLoggedIn,message.index);
 
 
-router.get('/editors',isLoggedIn,(req,res)=>{
-    //console.log(req.user);
-    res.render('pages/editors', {
-        user : req.user // get the user out of session and pass to template
-    });
 
-});
 router.get('/forms',isLoggedIn,(req,res)=>{
     //console.log(req.user);
     res.render('pages/forms', {
@@ -59,7 +53,14 @@ router.get('/profile',isLoggedIn,(req,res)=>{
 router.post('/add_student',isLoggedIn,student.add_student);
 
 
+router.get('/stu_mess',isLoggedIn,(req,res)=>{
+    //console.log(req.user);
+    res.render('pages/stu_mess.ejs', {
+        user : req.user // get the user out of session and pass to template
+    });
 
+
+});
 
 
 // route middleware to make sure

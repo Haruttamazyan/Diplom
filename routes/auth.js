@@ -29,6 +29,16 @@ module.exports = (app,passport)=>
         req.logout();
         res.redirect('/');
     });
+    app.post('/stu_login',passport.authenticate('local-login-student',{
+        successRedirect : '/stu_mess', // redirect to the secure profile section
+        failureRedirect : '/stu_login', // redirect back to the signup page if there is an error
+        failureFlash : true // allow flash messages
+    }));
+
+
+    app.get('/stu_login',(req,res)=>{
+    res.render('auth/stu_login', {message: req.flash('signupMessage')});
+    });
 
     // route middleware to make sure
     function isLoggedIn(req, res, next) {
